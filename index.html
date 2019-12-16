@@ -1,0 +1,90 @@
+<head>
+  <title>Tic Tac Toe Game</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .center {
+      text-align: center;
+      font-family: 'Abril Fatface', cursive;
+    }
+
+    .btn-danger,
+    .btn-primary {
+      font-size: 50px;
+      margin: 20px
+    }
+
+    td {
+      border: 1px solid black;
+      height: 130px;
+      width: 130px;
+      bgcolor: #FF0000;
+    }
+
+    .blink {
+      animation: blink-animation .9s steps(5, start) infinite;
+      -webkit-animation: blink-animation .5s steps(5, start) infinite;
+    }
+
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    td {
+      font-size: 90px;
+    }
+
+    .fa-times {
+      color: red;
+      size: 100px;
+    }
+
+    .fa-circle-o {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="font-size: 100px;" class="center">Tic Tac Toe</h1>
+  <div class="center" style="padding-bottom: 5px">
+    <h2 style="margin-top: 180px; font-size: 90px">Pick X's or O's</h2>
+    <button style="display: inline-block; " id="X" class="btn btn-danger">X's</button>
+    <button style="display: inline-block;" id="O" class="btn btn-primary">O's</button>
+  </div>
+  <div>
+    <div>
+      <h3 style="text-align: center; font-size: 50px" class="blink"></h3>
+    </div>
+    <table style="margin: auto;" class="center" id="table">
+      <tr>
+        <td id="1"></td>
+        <td id="2"></td>
+        <td id="3"></td>
+      </tr>
+      <tr>
+        <td id="4"></td>
+        <td id="5"> </td>
+        <td id="6"></td>
+      </tr>
+      <tr>
+        <td id="7"></td>
+        <td id="8"></td>
+        <td id="9"></td>
+      </tr>
+    </table>
+    <div class="center" style="padding-top: 10px;">
+      <button class="btn btn-info" id="reset">Reset</button>
+    </div>
+</body>
