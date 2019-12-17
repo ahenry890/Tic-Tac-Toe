@@ -7,6 +7,6 @@ Opponent diffculuty is not too High
 
 Game can be reset by pressing button
 
-You can see more of my projects [https://codepen.io/ahenry890](actual URL to navigate)
+You can see more of my projects [here](https://codepen.io/ahenry890)
 
 Site link: https://codepen.io/ahenry890/full/zdjrmO
